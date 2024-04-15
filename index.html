@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Animation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div id="obj1" class="obj1">
+      <img id="img1" class="img1" src="images/earth.webp" />
+    </div>
+
+    <div id="obj2" class="obj2">
+      <img id="img2" class="img2" src="images/moon.webp" />
+    </div>
+
+    <div id="obj3" class="obj3">
+      <img
+        id="img3"
+        class="img3"
+        src="images/sun.webp"
+        onmouseover="mouseOver()"
+        onmouseout="mouseOut()"
+      />
+    </div>
+
+    <div id="txt" class="font-effect-fire">THE END</div>
+
+    <audio id="blast" src="/sounds/Explosion+3.mp3"></audio>
+
+    <audio id="myMusic">
+      <source src="/sounds/interstellar_piano.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button type="button"><span></span>Start Button</button>
+
+    // javascript
+    <script src="script.js"></script>
+  </body>
+</html>

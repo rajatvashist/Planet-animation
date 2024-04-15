@@ -1,0 +1,100 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("images/cosmos-1853491_1280.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+button {
+  position: relative;
+  width: 150px;
+  margin: 260px 560px;
+  padding: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #3eff37;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+span {
+  background: #3eff37;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+.obj1 {
+  position: absolute;
+  margin: 200px 0px;
+  padding: 0;
+}
+
+.img1 {
+  width: 150px;
+  animation: rotation1 10s infinite linear;
+}
+@keyframes rotation1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.obj2 {
+  position: absolute;
+  margin: 200px 0px 200px 1100px;
+  padding: 0;
+}
+
+.img2 {
+  width: 150px;
+  animation: rotation2 10s infinite linear;
+}
+@keyframes rotation2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.obj3 {
+  position: absolute;
+  margin: 460px 0px;
+  padding: 0;
+}
+
+.img3 {
+  width: 100px;
+  animation: rotation3 5s linear infinite;
+}
+
+@keyframes rotation3 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#txt {
+  width: 100%;
+  max-width: 850px;
+  font-size: 55px;
+  margin: 250px 200px;
+  display: none;
+  text-align: center;
+}
